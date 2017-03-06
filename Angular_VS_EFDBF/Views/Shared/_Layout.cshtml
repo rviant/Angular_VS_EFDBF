@@ -6,6 +6,11 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Style sheet links by GULP. Bootstrap -->
+    <!-- inject:css -->
+    <!-- endinject -->
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -37,5 +42,10 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <!-- JS Files links by GULP. Lib folder files -->
+    <!-- inject:js -->
+    <!-- endinject -->
+
 </body>
 </html>
